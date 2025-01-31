@@ -1,4 +1,13 @@
-
 <app-search-bar></app-search-bar>
 
-<app-card></app-card>
+<div *ngIf="topCities.length > 0 || isError == false; else noData">
+    <app-card
+    [topCities]="topCities"
+    ></app-card>
+</div>
+
+<ng-template #noData>
+    <div class="rounded-2 bg-success p-4 mt-5">
+        <h2 class="text-white fw-light">Please wait a little longer</h2>
+    </div>    
+</ng-template>

@@ -1,9 +1,25 @@
-
 .small-flag{
     width: 50px;
 }
-/*
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
-
 @import 'node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+
+.sunny {
+    color: #FF5733;
+}
+
+.broken_clouds
+,.overcast_clouds
+,.scattered_clouds
+,.few_clouds
+,.scattered_clouds
+,.clouds{
+    color: #afa1a1;
+}
+
+.light_rain{
+    color: #7ac7df;
+}
+.clear_sky,.clear{
+    color: #000;
+}

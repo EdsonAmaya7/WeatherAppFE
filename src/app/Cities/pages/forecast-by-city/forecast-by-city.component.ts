@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-forecast-by-city',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForecastByCityComponent implements OnInit {
 
-  constructor() { }
+  cityId:any;
+
+  constructor(
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this.cityId = this.route.snapshot.paramMap.get('id')
+    console.log("city id", this.cityId);
+    if (this.cityId) {
+      this.cityId = JSON.parse(this.cityId);
+      console.log(this.cityId);
+    }
   }
 
 }

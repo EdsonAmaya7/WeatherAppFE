@@ -12,7 +12,7 @@ const routes: Routes = [
         pathMatch: 'full'
     },
     {
-        path: 'city/:id',
+        path: 'city/:{id}',
         component: ForecastByCityComponent,
       },
     {
