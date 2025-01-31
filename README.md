@@ -1,27 +1,79 @@
-# ReservamosApp
+# Guía para correr un proyecto con Angular 14 y .NET
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
+Este repositorio contiene un proyecto que combina **Angular 14** para el frontend y **.NET** para el backend. A continuación, te proporcionaré las instrucciones para configurarlo y ejecutarlo en tu máquina local.
 
-## Development server
+## Requisitos previos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Antes de empezar, asegúrate de tener instalados los siguientes programas en tu máquina:
 
-## Code scaffolding
+### 1. **Node.js y npm**
+   Angular 14 requiere **Node.js 18** y su administrador de paquetes **npm**.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+   - **Instalar Node.js**: Ve a [Node.js official website](https://nodejs.org/) y descarga la versión estable.
+   - Verifica la instalación:
+     ```bash
+     node -v
+     npm -v
+     ```
 
-## Build
+### 2. **Angular CLI**
+   Angular CLI es una herramienta de línea de comandos para Angular.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+   - Para instalarla globalmente, ejecuta el siguiente comando:
+     ```bash
+     npm install -g @angular/cli
+     ```
 
-## Running unit tests
+   - Verifica la instalación:
+     ```bash
+     ng version
+     ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 3. **.NET SDK**
+   Necesitas tener instalado el **.NET SDK** para poder ejecutar el backend.
 
-## Running end-to-end tests
+   - **Instalar .NET SDK**: Ve a [dotnet.microsoft.com](https://dotnet.microsoft.com/download) y descarga la última versión del SDK.
+   - Verifica la instalación:
+     ```bash
+     dotnet --version
+     ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 4. **Base de datos (opcional)**
+   Si tu proyecto usa una base de datos (por ejemplo, SQL Server, MySQL, etc.), asegúrate de tenerla instalada y configurada correctamente.
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Configuración del proyecto
+
+### 1. **Correr el FontEnd**
+   necesitas descargar las dependencia
+   ```bash
+   npm i
+   ```
+   Y ahora para correr el proyecto
+   ```bash
+   ng serve -o
+   ```
+   
+
+
+Run `ng serve` para el servidor de desarrollo. puedes acceder mediante la ruta `http://localhost:4200/`. 
+
+
+
+# Antes de correr el back
+
+
+### Repositorio BackEnd
+[Link Repositorio BackEnd](https://github.com/EdsonAmaya7/WeatherAppBE)
+
+
+---
+porfavor ingresa el api key en el archivo señalado,
+el archivo se encuentra, dentro de la carpeta Service
+
+![App Screenshot](src\assets\ruta.jpg)
+
+Aqui donde esta indicado puedes actualizar el valor, con el apikey
+![App Screenshot](src\assets\apiKey.jpeg)
+
